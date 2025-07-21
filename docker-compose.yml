@@ -7,13 +7,11 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
-    networks:
-      - reverse-proxy
-    expose:
-      - 80
+    #expose:
+    #  - 80
     restart: always
 
 networks:
-  reverse-proxy:
-    name: nginx_default
+  default:
+    name: nginx4omv_default
     external: true
