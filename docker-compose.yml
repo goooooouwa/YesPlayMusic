@@ -1,9 +1,9 @@
 services:
-  YesPlayMusic:
+  yesplaymusic:
     build:
       context: .
     image: yesplaymusic
-    container_name: YesPlayMusic
+    container_name: yesplaymusic
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
